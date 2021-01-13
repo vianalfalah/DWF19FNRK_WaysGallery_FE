@@ -1,0 +1,51 @@
+.home .filter {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.home .filter span {
+  display: flex;
+  align-items: center;
+  background-color: #e7e7e7;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+.home .content {
+  text-align: left;
+}
+
+.home .content h4 {
+  margin: 44px 0;
+  font-weight: 600;
+}
+
+.home .content .cards {
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  margin-bottom: 50px;
+  
+ 
+  
+}
+
+.list-card {
+  margin-right: 15px;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  border: 1px solid #2fc4b2;
+  border-radius: 5px;
+}
+
+.list-card img {
+  position: relative;
+  width: 250px;
+  height: 160px;
+  border: 1px solid #2fc4b2;
+  border-radius: 2px;
+}

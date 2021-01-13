@@ -1,0 +1,138 @@
+.img-post {
+  position: absolute;
+  width: 646px;
+  height: 484px;
+
+  top: 43px;
+}
+.kotak .img {
+  position: absolute;
+  width: 646px;
+  height: 484px;
+  top: 43px;
+  border: 1px solid #2fc4b2;
+  border-radius: 10px;
+}
+
+.greets {
+  position: absolute;
+  width: 415px;
+  height: 183px;
+
+  top: 143px;
+}
+
+.greets h3 {
+  position: absolute;
+  width: 200px;
+  height: 33px;
+
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 33px;
+  /* identical to box height */
+
+  display: flex;
+  align-items: center;
+
+  color: #000000;
+}
+
+.greets h2 {
+  position: absolute;
+  width: 415px;
+  height: 125px;
+  margin-top: 10px;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 66px;
+  display: flex;
+  align-items: center;
+}
+.box-avatar {
+  position: absolute;
+  width: 415px;
+  height: 326px;
+  left: 113px;
+  top: 189px;
+}
+.box-avatar .avatar {
+  position: absolute;
+  max-width: 120px;
+  height: 120px;
+  clip-path: circle();
+}
+
+.box-arts {
+  position: absolute;
+
+  left: 113px;
+
+  top: 780px;
+  display: flex;
+}
+.arts {
+  display: flex;
+}
+
+.user h1 {
+  position: absolute;
+  width: 200px;
+  height: 25px;
+  left: 113px;
+  top: 711px;
+
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 25px;
+  /* identical to box height */
+
+  display: flex;
+}
+
+.btn-hire {
+  position: absolute;
+  width: 100px;
+  height: 32px;
+  left: 113px;
+  top: 563px;
+}
+
+.edit {
+  position: absolute;
+  width: 125px;
+  height: 32px;
+  text-align: center;
+  color: white;
+  background: #e7e7e7;
+  border-radius: 5px;
+  font-family: Poppins;
+  background: #2fc4b2;
+  border-radius: 5px;
+}
+
+.kotak {
+  position: absolute;
+  width: 820px;
+  height: 400px;
+  right: 0;
+  top: 121px;
+
+  border-radius: 5px;
+}
+
+.kotak2 {
+  position: absolute;
+  width: 307px;
+  height: 400px;
+  right: 0;
+
+  background: #2fc4b2;
+  border-radius: 5px;
+}
