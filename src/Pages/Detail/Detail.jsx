@@ -30,7 +30,7 @@ function Detail() {
           src={
             post.createdBy.profile.avatar === "default"
               ? userIcon
-              : `${baseURL}${post.createdBy.profile.avatar}`
+              : post.createdBy.profile.avatar
           }
         />
         <p className="post-name">{post.title}</p>
