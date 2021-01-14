@@ -14,6 +14,7 @@ export const login = async (dispatch, body, seterrLogin) => {
     const getUser = await API.get("/user");
     localStorage.setItem("user", JSON.stringify(getUser.data.data));
 
+    console.log("get", getUser.data.data);
     dispatch({
       type: "LOGIN",
       payload: { ...getUser.data.data },
@@ -57,6 +58,7 @@ export const loadedService = async (dispatch) => {
       type: "LOADED",
       payload: { ...getProfile.data.data },
     });
+    console.log("prof", getProfile.data.data);
   } catch (error) {
     console.log(error);
   }
