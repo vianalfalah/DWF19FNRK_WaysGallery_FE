@@ -54,8 +54,7 @@ function UserProfile() {
           <div
             className="btn-hire"
             style={{
-              display:
-                localStorage.user.user.id == profile.profile.id ? "none" : "",
+              display: localStorage.user.user.id == profile.id ? "none" : "",
             }}
           >
             <Button className="follow">
@@ -74,8 +73,7 @@ function UserProfile() {
           <div
             className="btn-hire"
             style={{
-              display:
-                localStorage.user.user.id == profile.profile.id ? "" : "none",
+              display: localStorage.user.user.id == profile.id ? "" : "none",
             }}
           >
             <Link to="/edit-profile">
