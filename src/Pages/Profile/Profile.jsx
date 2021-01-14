@@ -35,7 +35,7 @@ function Profile() {
             ) : (
               <img
                 className="img"
-                src={`${baseURL}${profile.user.posts[0].photos[0].images}`}
+                src={profile.user.posts[0].photos[0].images}
               />
             )}
           </div>
@@ -45,7 +45,7 @@ function Profile() {
               src={
                 profile.user.profile.avatar === "default"
                   ? userIcon
-                  : `${baseURL}${profile.user.profile.avatar}`
+                  : profile.user.profile.avatar
               }
             />
             <div className="greets">
@@ -73,7 +73,7 @@ function Profile() {
               {profile.user.arts.length > 0 &&
                 profile.user.arts.map((art) => (
                   <img
-                    src={`${"http://localhost:5000/"}${art.images}`}
+                    src={art.images}
                     style={{
                       marginLeft: 15,
                       marginBottom: 50,

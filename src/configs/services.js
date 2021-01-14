@@ -66,7 +66,7 @@ export const logoutService = (dispatch) => {
   localStorage.removeItem("token");
   localStorage.removeItem("user");
 
-  Redirect("./");
+  Redirect("/");
   setAuthToken();
   dispatch({
     type: "LOGOUT",

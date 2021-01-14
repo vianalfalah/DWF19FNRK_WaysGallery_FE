@@ -17,14 +17,8 @@ function Project() {
         {project && project.files && (
           <div style={{ marginBottom: 30 }}>
             <div>
-              <img
-                className="img-view"
-                src={`${baseURL}${project.files[0].fileName}`}
-              />
-              <img
-                className="img-view1"
-                src={`${baseURL}${project.files[1].fileName}`}
-              />
+              <img className="img-view" src={project.files[0].path} />
+              <img className="img-view1" src={project.files[1].path} />
             </div>
             <div className="desc-view">
               <h2>{project.description}</h2>

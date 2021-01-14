@@ -42,16 +42,8 @@ function Detail() {
       <div className="post-img">
         {post && post.createdBy && (
           <>
-            <img
-              className="img1"
-              alt={post.id}
-              src={`${baseURL}${post.photos[0].images}`}
-            />
-            <img
-              className="img2"
-              alt={post.id}
-              src={`${baseURL}${post.photos[1].images}`}
-            />
+            <img className="img1" alt={post.id} src={post.photos[0].images} />
+            <img className="img2" alt={post.id} src={post.photos[1].images} />
           </>
         )}
       </div>
