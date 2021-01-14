@@ -1,6 +1,10 @@
-function area(lenght, width) {
-  return;
-  lenght * width;
-}
+import React from "react";
 
-console.log("area", area(3, 2));
+export default function test() {
+  return (
+    <div>
+      <input type="text" name="name" onChange={() => handleChange(e)} />
+      <input type="number" age="age" onChange={() => handleChange(e)} />
+    </div>
+  );
+}
