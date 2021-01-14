@@ -56,7 +56,7 @@ export const loadedService = async (dispatch) => {
     const getProfile = await API.get("/user");
     dispatch({
       type: "LOADED",
-      payload: { ...getProfile.data.data },
+      payload: { ...getProfile.data.data, ...getProfile.data.data.id },
     });
     console.log("prof", getProfile.data.data);
   } catch (error) {
