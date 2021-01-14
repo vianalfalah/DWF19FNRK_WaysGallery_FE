@@ -26,13 +26,17 @@ const reducer = (state, action) => {
         isLogin: false,
       };
     case "LOADED":
-      localStorage.setItem("id", action.payload.id);
       return {
         ...state,
         user: {
           id: action.payload.id,
           email: action.payload.email,
           fullName: action.payload.fullName,
+        },
+        id: {
+          user: {
+            id: action.payload.id,
+          },
         },
         isLogin: true,
       };
