@@ -25,17 +25,19 @@ function Detail() {
       <Header />
 
       <div className="post-info">
-        <img
-          className="post-avatar"
-          src={
-            post.createdBy.profile.avatar === "default"
-              ? userIcon
-              : post.createdBy.profile.avatar
-          }
-        />
+        <Link to={`/profile/${post.createdBy.id}`}>
+          <img
+            className="post-avatar"
+            src={
+              post.createdBy.profile.avatar === "default"
+                ? userIcon
+                : post.createdBy.profile.avatar
+            }
+          />
+        </Link>
         <p className="post-name">{post.title}</p>
         <p className="post-title">{post.createdBy.fullName}</p>
-        <Link to={`/profile/${post.createdBy.id}`}>
+        <Link to={`/hire/${post.createdBy.id}`}>
           <button className="btn">Hire</button>
         </Link>
       </div>
