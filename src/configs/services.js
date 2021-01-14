@@ -13,8 +13,8 @@ export const login = async (dispatch, body, seterrLogin) => {
 
     const getUser = await API.get("/user");
     localStorage.setItem("user", JSON.stringify(getUser.data.data));
+    localStorage.setItem("id", JSON.stringify(getUser.data.data.id));
 
-    console.log("get", getUser.data.data);
     dispatch({
       type: "LOGIN",
       payload: { ...getUser.data.data },
@@ -34,6 +34,7 @@ export const register = async (dispatch, body, seterrRegis) => {
     localStorage.setItem("token", response.data.data.user.token);
     const getUser = await API.get("/user");
     localStorage.setItem("user", JSON.stringify(getUser.data.data));
+    localStorage.setItem("id", JSON.stringify(getUser.data.data.id));
 
     dispatch({
       type: "LOGIN",
@@ -56,7 +57,7 @@ export const loadedService = async (dispatch) => {
     const getProfile = await API.get("/user");
     dispatch({
       type: "LOADED",
-      payload: { ...getProfile.data.data, ...getProfile.data.data.id },
+      payload: { ...getProfile.data.data },
     });
     console.log("prof", getProfile.data.data);
   } catch (error) {
