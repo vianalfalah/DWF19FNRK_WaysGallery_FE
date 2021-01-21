@@ -35,12 +35,12 @@ function Home() {
         <div className="content">
           <div className="filter">
             <span>
-              {/* <Moment format="dddd, DD MMMM YYYY">{date}</Moment> */}
+              
               Today's Posts
             </span>
           </div>
           <div style={{ display: "flex" }}>
-            <h4>Friday, 01 January 2021</h4>
+            <h4><Moment format="dddd, DD MMMM YYYY">{date}</Moment></h4>
 
             <input
               style={{ marginLeft: 550, marginTop: 30 }}
